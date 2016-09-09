@@ -55,9 +55,8 @@ COMMON_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 TARGET_PROVIDES_CAMERA_HAL := true
 
 # Charger
+WITH_CM_CHARGER := false
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_SHOW_PERCENTAGE := true
-BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/asus/mofd-common/charger/images
 
 # Dex-preoptimization: Speeds up initial boot (if we ever o a user build, which we don't)
 ifeq ($(HOST_OS),linux)
