@@ -132,7 +132,7 @@ on property:sys.boot_completed=1
 on charger
     #set properties in COS
     start intel_prop
-
+	
     setprop thermal.lite.crash 0
 
     chown system system /dev/dri/card0
